@@ -1,0 +1,52 @@
+<script src="../tinytest.js"></script>
+<script>
+    // function reduce(array, callback, startingValue){
+    //     resultSoFar = startingValue;
+
+    //     for (let i = 0; i < array.length; i++){
+    //         resultSoFar = callback(resultSoFar, array[i]);
+    //     }
+
+    //     return resultSoFar;
+
+    // }
+
+    // reduce(array, callback[, initialValue])
+
+    // callback parameters
+    // previousValue
+    // currentValue
+    // currentIndex
+    // array
+
+    //Returns a single value
+
+    //Description:
+    //executes the callback function once for each element present in the array
+    //excludes holes in the array
+
+    //Case A: Initial Value is provided
+        //previousValue = initialValue
+        //currentValue = first value of array
+
+        //callback will start at index 0
+
+    //Case B: Initial Value is not provided
+        //previousValue = first value in the array
+        //currentValue = second value in the array
+
+        //callback will start at index 1
+
+    //Edge Cases:
+        //If array is empty and no initial value was provided, TypeError should be thrown
+            //reduce([], function(){}) ==> TypeError
+        //If array only has one element, regardless of position, and no initialvalue was provided, or if initial value is provided, but the array is empty, the solo value is returned without calling callback.
+            //reduce([1], function(){}) OR reduce([], function(){}, 1) ==> solo value (1 in this case) returned without calling callback.
+
+
+
+
+    tests({
+
+    })
+</script>
